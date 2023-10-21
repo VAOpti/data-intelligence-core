@@ -1,0 +1,31 @@
+{
+  "name": "vision-aura/data-intelligence-core",
+  "type": "library",
+  "description": "This is the package that is to be used when creating a Data Intelligence application.",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ewald van 't Veer",
+      "email": "vaopti@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^10.28",
+    "laravel/sanctum": "^3.3",
+    "illuminate/notifications": "^10.28",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "VisionAura\\DataIntelligenceCore\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "VisionAura\\DataIntelligenceCore\\Providers\\CoreServiceProvider"
+      ]
+    }
+  }
+}
