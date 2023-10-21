@@ -20,12 +20,5 @@
     "psr-4": {
       "VisionAura\\DataIntelligenceCore\\": "src"
     }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "VisionAura\\DataIntelligenceCore\\Providers\\CoreServiceProvider"
-      ]
-    }
   }
 }
