@@ -7,11 +7,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+class CoreUser extends Authenticatable
 {
     use HasApiTokens, HasUuids, Notifiable;
 
     protected $connection = 'central_db';
+
+    protected $table = 'users';
 
     /**
      * The attributes that should be hidden for serialization.
