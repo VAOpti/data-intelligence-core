@@ -4,7 +4,7 @@ namespace VisionAura\DataIntelligenceCore\Providers;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
-use VisionAura\DataIntelligenceCore\Models\CoreUser;
+use VisionAura\DataIntelligenceCore\Models\User;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Relation::enforceMorphMap([
-            'user' => CoreUser::class,
+            'user' => User::class,
         ]);
     }
 }
